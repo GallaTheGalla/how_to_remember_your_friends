@@ -7,32 +7,91 @@ descript
 
 surface0
 {
-	collision0,0,0,130,65,head
+	animation5.interval,rarely
+	animation5.pattern0,stop,4
+	animation5.pattern1,overlay,3,0,0,0
+	animation5.pattern2,overlay,-1,250,0,0
+	animation5.pattern3,overlay,4,0,0,0
+	animation5.pattern4,overlay,-1,250,0,0
+	animation5.pattern5,overlay,5,0,0,0
+	animation5.pattern6,overlay,-1,250,0,0
+	animation5.pattern7,overlay,6,0,0,0
+	animation5.pattern8,overlay,-1,250,0,0
+	animation5.pattern9,start,4
+}
+
+surface20
+{
+	element0,overlay,surface0,0,0
 	
-	//Example code for blink animation - uncomment if you want it
-	//animation0.interval,random,4
-	//animation0.pattern1,overlay,101,0,0,0
-	//animation0.pattern2,overlay,102,100,0,0
-	//animation0.pattern3,overlay,-1,50,0,0
+	animation5.interval,always
+	animation5.pattern0,stop,4
+	animation5.pattern1,overlay,3,0,0,0
+	animation5.pattern2,overlay,-1,100,0,0
+	animation5.pattern3,overlay,4,0,0,0
+	animation5.pattern4,overlay,-1,100,0,0
+	animation5.pattern5,overlay,3,0,0,0
+	animation5.pattern6,overlay,-1,100,0,0
+	animation5.pattern7,overlay,4,0,0,0
+	animation5.pattern8,overlay,-1,100,0,0
+	animation5.pattern9,start,4
 	
+	animation7.interval,always
+	animation7.pattern0,overlay,21,100,0,0
+	animation7.pattern1,overlay,22,100,0,0
+}
+
+surface30
+{
+	element0,overlay,surface0,0,0
 	
-	//Example code for a talk animation - uncomment if you want it
-	// animation1.interval,talk,4
-	// animation1.pattern0,alternativestart,(2,3,4)
+	animation8.interval,runonce
+	animation8.pattern0,stop,4
+	animation8.pattern1,overlay,3,0,0,0
+	animation8.pattern2,overlay,-1,100,0,0
+	animation8.pattern3,overlay,4,0,0,0
+	animation8.pattern4,overlay,-1,100,0,0
+	animation8.pattern5,overlay,31,0,0,0
+	animation8.pattern6,overlay,-1,100,0,0
+	animation8.pattern7,overlay,32,0,0,0
+	animation8.pattern8,overlay,-1,100,0,0
+	animation8.pattern9,overlay,33,0,0,0
+	animation8.pattern10,overlay,-1,100,0,0
+	animation8.pattern11,overlay,34,0,0,0
+	animation8.pattern12,overlay,-1,100,0,0
+	animation8.pattern13,overlay,35,0,0,0
+	animation8.pattern14,overlay,-1,100,0,0
+	animation8.pattern15,overlay,36,0,0,0
+	animation8.pattern16,overlay,-1,400,0,0
+	animation8.pattern17,start,4
+}
+
+surface.append0,20,30
+{
+	animation0.interval,talk,6
+	animation0.pattern0,alternativestart,(1,2,3)
 	
-	// animation2.interval,never
-	// animation2.pattern0,overlay,103,0,0,0
-	// animation2.pattern1,overlay,104,200,0,0
-	// animation2.pattern2,overlay,-1,200,0,0
+	animation1.interval,never
+	animation1.pattern0,overlay,1,0,0,0
+	animation1.pattern1,overlay,-1,200,0,0
 	
-	// animation3.interval,never
-	// animation3.pattern0,overlay,103,0,0,0
-	// animation3.pattern1,overlay,-1,200,0,0
+	animation2.interval,never
+	animation2.pattern0,overlay,1,0,0,0
+	animation2.pattern1,overlay,-1,300,0,0
 	
-	// animation4.interval,never
-	// animation4.pattern0,overlay,104,0,0,0
-	// animation4.pattern1,overlay,105,200,0,0
-	// animation4.pattern2,overlay,-1,200,0,0
+	animation3.interval,never
+	animation3.pattern0,overlay,1,0,0,0
+	animation3.pattern1,overlay,-1,100,0,0
+	
+	animation4.interval,runonce
+	animation4.pattern0,overlay,2,0,0,0
+	
+	animation6.interval,always
+	animation6.pattern0,overlay,7,0,0,0
+	animation6.pattern1,overlay,-1,400,0,0
+	animation6.pattern2,overlay,8,0,0,0
+	animation6.pattern3,overlay,-1,400,0,0
+	animation6.option,shared-index
 }
 
 //—————————————————————————————— Kero surfaces ——————————————————————————————
