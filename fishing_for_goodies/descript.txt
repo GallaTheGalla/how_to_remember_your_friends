@@ -2,7 +2,6 @@ charset,UTF-8
 type,balloon
 use_self_alpha,1
 use_input_alpha,1
-//overlay_outside_balloon,1
 
 
 //——— Basic information ———
@@ -17,7 +16,7 @@ origin.x,0
 origin.y,0
 
 validrect.left,26
-validrect.top,23
+validrect.top,24
 validrect.right,-16
 validrect.bottom,-25
 
@@ -25,12 +24,12 @@ wordwrappoint.x,-28
 
 
 //——— Font ———
-font.name,Calibri
-font.height,14
+font.name,Kristen ITC
+font.height,13
 
-font.color.r,013
-font.color.g,020
-font.color.b,046
+font.color.r,000
+font.color.g,000
+font.color.b,000
 
 anchor.font.color.r,015
 anchor.font.color.g,084
@@ -42,9 +41,9 @@ cursor.font.color.b,138
 
 cursor.style,underline
 
-disable.font.color.r,146
-disable.font.color.g,135
-disable.font.color.b,178
+//disable.font.color.r,146
+//disable.font.color.g,135
+//disable.font.color.b,178
 
 
 //——— Arrows ———
