@@ -1,0 +1,98 @@
+charset,UTF-8
+type,balloon
+use_self_alpha,1
+use_input_alpha,1
+//overlay_outside_balloon,1
+
+
+//——— Basic information ———
+name,fishing for goodies
+craftman,
+craftmanurl,
+homeurl,
+
+
+//——— Display area ———
+origin.x,0
+origin.y,0
+
+validrect.left,26
+validrect.top,23
+validrect.right,-16
+validrect.bottom,-25
+
+wordwrappoint.x,-28
+
+
+//——— Font ———
+font.name,Calibri
+font.height,14
+
+font.color.r,013
+font.color.g,020
+font.color.b,046
+
+anchor.font.color.r,015
+anchor.font.color.g,084
+anchor.font.color.b,138
+
+cursor.font.color.r,015
+cursor.font.color.g,084
+cursor.font.color.b,138
+
+cursor.style,underline
+
+disable.font.color.r,146
+disable.font.color.g,135
+disable.font.color.b,178
+
+
+//——— Arrows ———
+arrow0.x,-17
+arrow0.y,10
+
+arrow1.x,-17
+arrow1.y,-32
+
+
+//——— Online marker ———
+onlinemarker.x,143
+onlinemarker.y,9
+
+//onlinemarker.interval,175
+
+
+//——— SSTP ———
+sstpmarker.x,24
+sstpmarker.y,11
+
+sstpmessage.font.name,Calibri
+sstpmessage.font.height,11
+
+sstpmessage.x,35
+sstpmessage.xr,-20
+sstpmessage.y,8
+
+sstpmessage.font.color.r,185
+sstpmessage.font.color.g,195
+sstpmessage.font.color.b,232
+
+
+//——— Number ———
+number.font.name,Calibri
+number.font.height,11
+
+number.xr,-25
+number.y,-22
+
+number.font.color.r,185
+number.font.color.g,195
+number.font.color.b,232
+
+
+//——— Input box ———
+communicatebox.x,8
+communicatebox.y,8
+
+communicatebox.width,283
+communicatebox.height,20

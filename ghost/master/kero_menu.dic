@@ -1,0 +1,15 @@
+KeroMenuGreetings : nonoverlap
+{
+	"\1Hi."
+	"\1What's up?"
+}
+
+OnKeroMenu : all
+{
+	"\1\b2\![set,autoscroll,disable]"
+	if SHIORI3FW.Eventid == "OnMouseDoubleClick"; KeroMenuGreetings
+	"\n\n\_q"
+	
+	"\![*]\q[Nevermind,blank]"
+}
+

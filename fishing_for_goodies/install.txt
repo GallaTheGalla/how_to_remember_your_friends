@@ -1,0 +1,4 @@
+charset,UTF-8
+type,balloon
+name,fishing for goodies
+directory,fishing_for_goodies

@@ -1,0 +1,6 @@
+charset,UTF-8
+type,ghost
+
+name,How To Remember Your Friends
+directory,how_to_remember_your_friends
+balloon.directory,fishing_for_goodies
