@@ -1,4 +1,12 @@
-//Separate from the menus because you could put other interactions here, like poking or booping or punching or asking about various hotspots
+OnMouseClick
+{
+	if reference4 == "Catch"
+	{
+		"\0\s[30]I got a catch!\x\s[0]"
+	}
+
+}
+
 OnMouseDoubleClick
 {
 	if reference5 == 0 //reference5 is the mouse button being clicked, in this case a left click

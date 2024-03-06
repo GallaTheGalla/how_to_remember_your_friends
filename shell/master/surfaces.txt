@@ -22,6 +22,8 @@ surface0
 
 surface20
 {
+	collisionex0,Catch,polygon,50,13,53,13,55,15,59,14,61,14,63,12,65,11,66,10,67,9,69,8,71,15,72,16,73,19,75,19,76,20,80,21,81,23,80,24,79,25,78,27,77,30,76,33,78,35,79,38,79,40,71,40,69,41,68,42,67,44,66,45,65,46,63,47,61,47,61,44,60,41,59,40,57,39,51,40,48,41,50,36,50,31,49,29,48,28,46,26,44,26,42,24,43,22,50,21,51,16,51,14
+	
 	element0,overlay,surface0,0,0
 	
 	animation5.interval,always
@@ -62,8 +64,7 @@ surface30
 	animation8.pattern13,overlay,35,0,0,0
 	animation8.pattern14,overlay,-1,100,0,0
 	animation8.pattern15,overlay,36,0,0,0
-	animation8.pattern16,overlay,-1,400,0,0
-	animation8.pattern17,start,4
+	animation8.pattern16,overlay,36,400,0,0
 }
 
 surface.append0,20,30
