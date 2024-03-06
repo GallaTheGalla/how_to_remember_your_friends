@@ -1,9 +1,12 @@
 OnFirstBoot
 {
-	stroke = 0
+	variable.initialize
+	--
+	displayjournal
+	--
 	LastTalk = ""
 	
-	"\1\s[10]\0\s[0]Hello, and welcome to the Simplicity Template, %(username).\w8 As the name implies, this template is very simple.\w8 You will notice there is not much here.\w8 That's on purpose!\w8 This template's primary goal is to make ghost creation less intimidating.\w8 You really need almost nothing to make a ghost;\w4 a basic shell with some interesting randomtalk can be an incredible and fun experience.\w8 So all those boring functions to do with email checking and such?\w8 Not here, unless you decide you want to add them.\w8 Don't let tedious functions tire you out before you can finish your ghost!\w8 Make something simple and fun, or start small and expand upon it later!\w8 Embrace the freedom of simplicity!"
+	"\0\s[0]Hello, and welcome to the Simplicity Template, %(username).\w8 As the name implies, this template is very simple.\w8 You will notice there is not much here.\w8 That's on purpose!\w8 This template's primary goal is to make ghost creation less intimidating.\w8 You really need almost nothing to make a ghost;\w4 a basic shell with some interesting randomtalk can be an incredible and fun experience.\w8 So all those boring functions to do with email checking and such?\w8 Not here, unless you decide you want to add them.\w8 Don't let tedious functions tire you out before you can finish your ghost!\w8 Make something simple and fun, or start small and expand upon it later!\w8 Embrace the freedom of simplicity!"
 }
 
 OnInitialize
@@ -16,25 +19,10 @@ OnInitialize
 
 OnBoot
 {
-	_temp = SHIORI3FW.UserBirthday
-	_user_birthday = "%(_temp[1])/%(_temp[2])"
-	_today = "%(month)/%(day)"
-	
-	"\1\s[10]\0\s[0]"
+	displayjournal
 	--
-	if _today == _user_birthday
-	{
-		"\0\s[0]It is %(username)'s birthday today.\w8 Happy birthday, %(username).\w8 Developer,\w4 you can add an interesting message here.\w8 It can be as long as you like.\w8 Or, you can remove it entirely."
-	}
-	elseif _today == "1/1"
-	{
-		"\0\s[0]It's new year's day.\w8 Happy %(year),\w4 %(username)."
-	}
-	else
-	{
-		"\0\s[0]Hello %(username).\w8 Good to see you."
-		"\0\s[0]Hello.\w8 Ready to make something cool?"
-	}
+	"\0\s[0]Hello %(username).\w8 Good to see you."
+	"\0\s[0]Hello.\w8 Ready to make something cool?"
 }
 
 OnClose
@@ -43,4 +31,9 @@ OnClose
 	"\0\s[0]Goodbye."
 	--
 	"\w8\w8\-"
+}
+
+variable.initialize
+{
+	journalopen = 0
 }
