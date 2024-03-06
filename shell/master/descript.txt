@@ -2,7 +2,8 @@ charset,UTF-8
 type,shell
 
 name,Default Shell
-craftman,
+craftman,Reel-Inna Boatman & Swampbubble
+craftmanw,Reel-Inna Boatman & Swampbubble
 craftmanurl,
 
 seriko.alignmenttodesktop,free

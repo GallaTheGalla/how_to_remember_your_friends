@@ -5,10 +5,11 @@ type,ghost
 
 shiori,yaya.dll
 
-craftman,
+craftman,Reel-Inna Boatman & Swampbubble
+craftmanw,Reel-Inna Boatman & Swampbubble
 craftmanurl,
 
-sakura.name,Fishing Man
+sakura.name,Fisher
 kero.name,Scrapbook
 
 icon,icon.ico
