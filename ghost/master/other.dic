@@ -1,3 +1,8 @@
+BalloonIsOpen
+{
+    "balloon" _in_ status
+}
+
 displayjournal
 {
 	if journalopen; "\1\s[10]"
