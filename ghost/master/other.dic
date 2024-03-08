@@ -48,6 +48,15 @@ OnKeyPress
 	elseif reference0 == "s"; OnJournalOpen
 }
 
+OnSecondChange
+{
+    if GETSECCOUNT >= FishingTime
+    {
+         SetFishingTime
+         "\0\s[20]Fishing Time!"
+    }
+}
+
 OnSurfaceRestore
 {
 	displayjournal
