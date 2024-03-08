@@ -1,15 +1,7 @@
-SakuraMenuGreetings : nonoverlap
-{
-	"Hello."
-	"How can I help you?"
-}
-
 OnSakuraMenu : all
 {
 	"\0\s[0]\b4\![set,autoscroll,disable]"
-	if SHIORI3FW.Eventid == "OnMouseDoubleClick"; SakuraMenuGreetings //The check here is so they won't comment if you click the back button. Remove if you prefer
-	
-	"\n\n\_q"
+	"\n[half]\_q"
 	
 	"\![*]\q[Talk to me,OnAiTalk]"
 	if LastTalk != ""; "  \![*]\q[Say that again,OnLastTalk]"
@@ -26,22 +18,22 @@ OnSakuraMenu : all
 	elseif aitalkinterval == 600; _talkrate = "10 minutes"
 	"Talkrate:\n"
 
-	if _talkrate == "30 seconds"; "☑\q[30s,OnTalkRateChange,30]"
-	else; "☐\q[30s,OnTalkRateChange,30]"
+	if _talkrate == "30 seconds"; "\q[☑30s,OnTalkRateChange,30]"
+	else; "\q[☐30s,OnTalkRateChange,30]"
 	"  "
-	if _talkrate == "1 minute"; "☑\q[1m,OnTalkRateChange,60]"
-	else; "☐\q[1m,OnTalkRateChange,60]"
+	if _talkrate == "1 minute"; "\q[☑1m,OnTalkRateChange,60]"
+	else; "\q[☐1m,OnTalkRateChange,60]"
 	"  "
-	if _talkrate == "3 minutes"; "☑\q[3m,OnTalkRateChange,180]"
-	else; "☐\q[3m,OnTalkRateChange,180]"
+	if _talkrate == "3 minutes"; "\q[☑3m,OnTalkRateChange,180]"
+	else; "\q[☐3m,OnTalkRateChange,180]"
 	"  "
-	if _talkrate == "5 minutes"; "☑\q[5m,OnTalkRateChange,300]"
-	else; "☐\q[5m,OnTalkRateChange,300]"
+	if _talkrate == "5 minutes"; "\q[☑5m,OnTalkRateChange,300]"
+	else; "\q[☐5m,OnTalkRateChange,300]"
 	"  "
-	if _talkrate == "10 minutes"; "☑\q[10m,OnTalkRateChange,600]"
-	else; "☐\q[10m,OnTalkRateChange,600]"
+	if _talkrate == "10 minutes"; "\q[☑10m,OnTalkRateChange,600]"
+	else; "\q[☐10m,OnTalkRateChange,600]"
 	
-	"\n\n\![*]\q[Nevermind,blank]"	
+	"\n\n[half]\![*]\q[Nevermind,blank]"	
 }
 
 OnLastTalk

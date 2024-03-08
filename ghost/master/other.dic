@@ -60,10 +60,13 @@ OnSecondChange
 OnSurfaceRestore
 {
 	displayjournal
+	--
 	"\0\s[0]"
 }
 
 OnWindowStateRestore
 {
-	"\1\s[10]\0\s[0]"
+	displayjournal
+	--
+	"\0\s[0]"
 }

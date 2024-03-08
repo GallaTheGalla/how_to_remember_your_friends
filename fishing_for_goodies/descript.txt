@@ -2,12 +2,13 @@ charset,UTF-8
 type,balloon
 use_self_alpha,1
 use_input_alpha,1
+overlay_outside_balloon,1
 
 
 //——— Basic information ———
 name,fishing for goodies
-craftman,
-craftmanurl,
+craftman,Reel-Inna Boatman & Swampbubble
+craftmanurl,Reel-Inna Boatman & Swampbubble
 homeurl,
 
 
@@ -91,7 +92,11 @@ number.font.color.b,232
 
 //——— Input box ———
 communicatebox.x,8
-communicatebox.y,8
+communicatebox.y,23
 
-communicatebox.width,283
-communicatebox.height,20
+communicatebox.width,434
+communicatebox.height,24
+
+communicatebox.font.color.r,229
+communicatebox.font.color.g,209
+communicatebox.font.color.b,192
