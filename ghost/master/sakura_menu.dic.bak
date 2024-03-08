@@ -53,7 +53,7 @@ OnTalkRateChange
 {
 	if aitalkinterval == TOINT(reference0)
 	{
-		aitalkinterval = 0
+		aitalkinterval == 0
 	}
 	else
 	{
