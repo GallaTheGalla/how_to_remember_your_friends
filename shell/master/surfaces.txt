@@ -116,6 +116,9 @@ surface10
 	
 	animation102.interval,bind
 	animation102.pattern0,replace,102,0,0,0
+
+	animation104.interval,bind
+	animation104.pattern0,replace,104,0,0,0
 }
 //GARDENING
 //gardening page
@@ -330,6 +333,88 @@ surface1019
 surface1021
 {
 	element0,overlay,lostitems_photo_border.png,0,0
+}
+
+//OLD TOYS
+//old toys page
+surface104
+{
+	element0,overlay,scrapbookopen.png,0,0
+
+	animation1022.interval,bind
+	animation1022.pattern0,overlay,1022,0,0,0
+
+animation1022.collisionex0,Clown,polygon,101,59,121,52,147,54,172,60,179,133,157,140,129,140,110,141,105,116,101,62
+
+	animation1023.interval,bind
+	animation1023.pattern0,overlay,1023,0,0,0
+
+	animation1024.interval,bind
+	animation1024.pattern0,overlay,1024,0,0,0
+
+animation1024.collisionex0,Spinning Top,polygon,211,41,279,24,283,54,288,88,262,94,222,107,218,99,211,42
+
+	animation1025.interval,bind
+	animation1025.pattern0,overlay,1025,0,0,0
+
+	animation1026.interval,bind
+	animation1026.pattern0,overlay,1026,0,0,0
+
+animation1026.collisionex0,Teddy,polygon,65,145,93,146,157,148,149,217,104,220,60,219,60,192,63,146
+
+	animation1027.interval,bind
+	animation1027.pattern0,overlay,1027,0,0,0
+
+	animation1028.interval,bind
+	animation1028.pattern0,overlay,1028,0,0,0
+
+animation1028.collisionex0,Yoyo,polygon,245,109,285,100,321,101,326,160,326,192,287,196,245,204,243,163,243,112
+animation1028.collisionex1,Yoyo,polygon,223,118,227,128,226,134,221,139,219,156,216,172,216,187,223,196,219,204,213,204,213,197,211,182,213,158,216,138,213,129,213,121,220,117
+
+	animation1029.interval,bind
+	animation1029.pattern0,overlay,1029,0,0,0
+}
+
+//old toys entries
+surface1022
+{
+	element0,overlay,oldtoys_clown.png,0,0
+}
+
+surface1024
+{
+	element0,overlay,oldtoys_spinningtop.png,0,0
+}
+
+surface1026
+{
+	element0,overlay,oldtoys_teddy.png,0,0
+}
+
+surface1028
+{
+	element0,overlay,oldtoys_yoyo.png,0,0
+}
+
+//old toys highlights
+surface1023
+{
+	element0,overlay,oldtoys_clown_border.png,0,0
+}
+
+surface1025
+{
+	element0,overlay,oldtoys_spinningtop_border.png,0,0
+}
+
+surface1027
+{
+	element0,overlay,oldtoys_teddy_border.png,0,0
+}
+
+surface1029
+{
+	element0,overlay,oldtoys_yoyo_border.png,0,0
 }
 
 //page turns

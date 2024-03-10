@@ -55,11 +55,6 @@ OnMouseEnter
 	if reference4 == "Diary"; "\1\![bind,Highlight,Diary,1]"
 	if reference4 == "Key"; "\1\![bind,Highlight,Key,1]"
 	if reference4 == "Photograph"; "\1\![bind,Highlight,Photograph,1]"
-	
-	if reference4 == "Clown"; "\1\![bind,Highlight,Clown,1]"
-	if reference4 == "Spinning Top"; "\1\![bind,Highlight,Spinning Top,1]"
-	if reference4 == "Teddy"; "\1\![bind,Highlight,Teddy,1]"
-	if reference4 == "Yoyo"; "\1\![bind,Highlight,Yoyo,1]"
 }
 
 OnMouseLeave
@@ -81,9 +76,4 @@ OnMouseLeave
 	if reference4 == "Diary"; "\1\![bind,Highlight,Diary,0]"
 	if reference4 == "Key"; "\1\![bind,Highlight,Key,0]"
 	if reference4 == "Photograph"; "\1\![bind,Highlight,Photograph,0]"
-	
-	if reference4 == "Clown"; "\1\![bind,Highlight,Clown,0]"
-	if reference4 == "Spinning Top"; "\1\![bind,Highlight,Spinning Top,0]"
-	if reference4 == "Teddy"; "\1\![bind,Highlight,Teddy,0]"
-	if reference4 == "Yoyo"; "\1\![bind,Highlight,Yoyo,0]"
 }

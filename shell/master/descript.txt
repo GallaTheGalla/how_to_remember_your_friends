@@ -43,3 +43,13 @@ kero.bindgroup1015.name,Highlight,Pocket Watch
 kero.bindgroup1017.name,Highlight,Diary
 kero.bindgroup1019.name,Highlight,Key
 kero.bindgroup1021.name,Highlight,Photograph
+
+kero.bindgroup104.name,Page,Old Toys
+kero.bindgroup1022.name,Entry,Clown
+kero.bindgroup1024.name,Entry,Spinning Top
+kero.bindgroup1026.name,Entry,Teddy
+kero.bindgroup1028.name,Entry,Yoyo
+kero.bindgroup1023.name,Highlight,Clown
+kero.bindgroup1025.name,Highlight,Spinning Top
+kero.bindgroup1027.name,Highlight,Teddy
+kero.bindgroup1029.name,Highlight,Yoyo
