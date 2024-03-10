@@ -48,6 +48,26 @@ OnKeyPress
 	elseif reference0 == "s"; OnJournalOpen
 }
 
+OnNotifyDressupInfo
+{
+	CurrentDressups = IARRAY
+	foreach reference; _page
+	{
+		_page = SPLIT(_page,C_BYTE1)
+		_id = _page[0]
+		_category = _page[1]
+		_item_name = _page[2]
+		
+		LOGGING("_page[4]: %(_page[4])")
+		if _id == "1" && _page[1] == "Page" && _page[4] == "1"
+		{
+			CurrentPage = _item_name
+			LOGGING("====================================================================")
+			LOGGING("CurrentPage: %(CurrentPage)")
+		}
+	}
+}
+
 OnSecondChange
 {
     if GETSECCOUNT >= FishingTime
@@ -64,9 +84,38 @@ OnSurfaceRestore
 	"\0\s[0]"
 }
 
+OnTogglePage
+{
+	_index = ASEARCH(TOSTR(CurrentPage),PageArray)
+    _index++
+    if _index >= ARRAYSIZE(PageArray); _index = 0
+    "\1\![bind,Page,%(PageArray[_index]),1]"
+}
+
+OnTogglePageReverse
+{
+    _index = ASEARCH(TOSTR(CurrentPage),PageArray)
+    _index--
+    if _index < 0; _index = ARRAYSIZE(PageArray)
+    "\1\![bind,Page,%(PageArray[_index]),1]"
+}
+
 OnWindowStateRestore
 {
 	displayjournal
 	--
 	"\0\s[0]"
+}
+
+PageArray : array
+{
+	"Open"
+	"Gardening"
+	"Lost Items"
+}
+
+WearingDressup
+{
+	if ASEARCH(_argv[0],CurrentDressups) != -1; 1
+	else; 0
 }

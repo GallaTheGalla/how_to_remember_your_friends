@@ -103,6 +103,14 @@ surface.append0,20,30
 //closed journal
 surface10
 {
+	collisionex0,Previous,polygon,38,179,40,183,41,186,42,189,43,191,45,193,45,194,47,196,47,198,60,210,60,213,59,215,58,217,57,219,56,220,54,223,53,224,51,227,41,228,39,227,37,224,37,224,36,223,35,212,34,191,33,166,39,180
+	
+	collisionex1,Next,polygon,335,158,334,160,333,164,332,167,331,169,331,171,329,172,328,174,328,176,315,188,315,191,317,193,317,195,319,196,319,198,320,201,324,207,335,207,340,207,342,204,343,201,344,200,342,195,341,182,340,163,338,150,336,158
+	
+	animation11.interval,bind
+	animation11.pattern0,overlay,11,0,0,0
+	animation11.collisionex0,Open,polygon,221,107,222,105,224,104,226,103,232,102,237,102,240,101,243,99,247,98,252,97,255,97,258,96,261,95,264,94,268,93,273,92,277,92,279,93,280,94,281,98,282,107,282,124,281,126,278,127,276,128,275,129,272,130,270,131,266,132,260,133,255,134,249,135,239,136,231,137,226,137,224,136,223,135,222,133,221,129,221,107
+	
 	animation100.interval,bind
 	animation100.pattern0,replace,100,0,0,0
 	
@@ -114,6 +122,9 @@ surface10
 surface100
 {
 	element0,overlay,scrapbookopen.png,0,0
+	
+	animation101.interval,bind
+	animation101.pattern0,overlay,101,0,0,0
 	
 	animation1000.interval,bind
 	animation1000.pattern0,overlay,1000,0,0,0
@@ -156,6 +167,12 @@ surface100
 	
 	animation1011.interval,bind
 	animation1011.pattern0,overlay,1011,0,0,0
+}
+
+//gardening complete
+surface101
+{
+	element0,overlay,garden_complete.png,0,0
 }
 
 //gardening entries
@@ -313,4 +330,14 @@ surface1019
 surface1021
 {
 	element0,overlay,lostitems_photo_border.png,0,0
+}
+
+//page turns
+surface.append100-999
+{
+	animation10000.interval,bind
+	animation10000.pattern0,overlay,10000,0,0,0
+	
+	animation10001.interval,bind
+	animation10001.pattern0,overlay,10001,0,0,0
 }

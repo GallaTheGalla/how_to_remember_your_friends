@@ -7,8 +7,10 @@ OnSakuraMenu : all
 	if LastTalk != ""; "  \![*]\q[Say that again,OnLastTalk]"
 	"\n\n[half]"
 	
-	if journalopen; "\![*]\q[Close Scrapbook,OnJournalOpen]\n\n"
-    else; "\![*]\q[Open Scrapbook,OnJournalOpen]\n\n"
+	if journalopen; "\![*]\q[Close Scrapbook,OnJournalOpen]\n\n[half]"
+    else; "\![*]\q[Open Scrapbook,OnJournalOpen]\n\n[half]"
+	
+	"\![*]\q[Change Fishing Rate,OnFishRateChangeMenu]\n\n[half]"
 	
 	_talkrate = "Off"
 	if aitalkinterval == 30; _talkrate = "30 seconds"
@@ -33,7 +35,7 @@ OnSakuraMenu : all
 	if _talkrate == "10 minutes"; "\q[☑10m,OnTalkRateChange,600]"
 	else; "\q[☐10m,OnTalkRateChange,600]"
 	
-	"\n\n[half]\![*]\q[Nevermind,blank]"	
+	"\n\n\![*]\q[Nevermind,blank]"	
 }
 
 OnLastTalk
@@ -53,4 +55,34 @@ OnTalkRateChange
 	}
 	--
 	OnSakuraMenu
+}
+
+OnFishRateChangeMenu : all
+{
+	"\b4\_qHow often would you like fish to bite?\n\n[half]"
+	//often sometimes periodic rare random
+	
+	if fishrate == "Often"; "\q[☑Often,OnFishRateChange,Often]"
+	else; "\q[☐Often,OnFishRateChange,Often]"
+	"\n"
+	if fishrate == "Sometimes"; "\q[☑Sometimes,OnFishRateChange,Sometimes]"
+	else; "\q[☐Sometimes,OnFishRateChange,Sometimes]"
+	"\n"
+	if fishrate == "Periodic"; "\q[☑Periodic,OnFishRateChange,Periodic]"
+	else; "\q[☐Periodic,OnFishRateChange,Periodic]"
+	"\n"
+	if fishrate == "Rare"; "\q[☑Rare,OnFishRateChange,Rare]"
+	else; "\q[☐Rare,OnFishRateChange,Rare]"
+	"\n"
+	if fishrate == "Random"; "\q[☑Random,OnFishRateChange,Random]"
+	else; "\q[☐Random,OnFishRateChange,Random]"
+	"\n\n"
+	"\q[Back,OnSakuraMenu]"
+}
+
+OnFishRateChange
+{
+	fishrate = reference0
+	--
+	OnFishRateChangeMenu
 }

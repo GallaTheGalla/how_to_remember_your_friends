@@ -10,7 +10,13 @@ seriko.alignmenttodesktop,free
 seriko.use_self_alpha,1
 
 kero.menu,auto
+kero.bindoption11.group,Page,mustselect
+kero.bindgroup11.default,11
 kero.bindoption1000.group,Entry,multiple
+
+kero.bindgroup11.name,Page,Open
+kero.bindgroup10000.name,Page Turn,Previous
+kero.bindgroup10001.name,Page Turn,Next
 
 kero.bindgroup100.name,Page,Gardening
 kero.bindgroup1000.name,Entry,Pot

@@ -4,15 +4,27 @@ OnMouseClick
 	{
 		"\0\s[30]I got a catch!\x\s[0]"
 	}
-
+	
+	if reference4 == "Open"
+	{
+		"\![raise,OnTogglePage]"
+	}
+	
+	if reference4 == "Next"
+	{
+		"\![raise,OnTogglePage]"
+	}
+	
+	if reference4 == "Previous"
+	{
+		"\![raise,OnTogglePageReverse]"
+	}
 }
 
 OnMouseDoubleClick
 {
-	if reference5 == 0 //reference5 is the mouse button being clicked, in this case a left click
+	if reference5 == 0
 	{
-		//reference3 is which character is being clicked
-		//If you want to add double click interactions, reference4 will be the name of the hitbox the mouse is over
 		if reference3 == 0
 		{
 			OnSakuraMenu
@@ -28,6 +40,9 @@ OnMouseEnter
 {
 	if BalloonIsOpen; "\C"
 	--
+	if reference4 == "Previous"; "\1\![bind,Page Turn,Previous,1]"
+	if reference4 == "Next"; "\1\![bind,Page Turn,Next,1]"
+	
 	if reference4 == "Pot"; "\1\![bind,Highlight,Pot,1]"
 	if reference4 == "Seeds"; "\1\![bind,Highlight,Seeds,1]"
 	if reference4 == "Shears"; "\1\![bind,Highlight,Shears,1]"
@@ -46,6 +61,9 @@ OnMouseLeave
 {
 	if BalloonIsOpen; "\C"
 	--
+	if reference4 == "Previous"; "\1\![bind,Page Turn,Previous,0]"
+	if reference4 == "Next"; "\1\![bind,Page Turn,Next,0]"
+	
 	if reference4 == "Pot"; "\1\![bind,Highlight,Pot,0]"
 	if reference4 == "Seeds"; "\1\![bind,Highlight,Seeds,0]"
 	if reference4 == "Shears"; "\1\![bind,Highlight,Shears,0]"
