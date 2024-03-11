@@ -32,20 +32,23 @@ font.color.r,000
 font.color.g,000
 font.color.b,000
 
-anchor.font.color.r,015
-anchor.font.color.g,084
-anchor.font.color.b,138
+anchor.font.color.r,126
+anchor.font.color.g,027
+anchor.font.color.b,036
 
-cursor.font.color.r,015
-cursor.font.color.g,084
-cursor.font.color.b,138
+anchor.pen.color.r,126
+anchor.pen.color.g,027
+anchor.pen.color.b,036
+
+cursor.font.color.r,126
+cursor.font.color.g,027
+cursor.font.color.b,036
+
+cursor.pen.color.r,126
+cursor.pen.color.g,027
+cursor.pen.color.b,036
 
 cursor.style,underline
-
-//disable.font.color.r,146
-//disable.font.color.g,135
-//disable.font.color.b,178
-
 
 //——— Arrows ———
 arrow0.x,-17
