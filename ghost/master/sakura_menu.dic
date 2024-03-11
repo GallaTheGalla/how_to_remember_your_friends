@@ -77,12 +77,14 @@ OnFishRateChangeMenu : all
 	if fishrate == "Random"; "\q[☑Random,OnFishRateChange,Random]"
 	else; "\q[☐Random,OnFishRateChange,Random]"
 	"\n\n"
-	"\q[Back,OnSakuraMenu]"
+	"\![*]\q[Back,OnSakuraMenu]"
 }
 
 OnFishRateChange
 {
 	fishrate = reference0
+	--
+	SetFishingTime
 	--
 	OnFishRateChangeMenu
 }
