@@ -60,7 +60,6 @@ OnTalkRateChange
 OnFishRateChangeMenu : all
 {
 	"\b4\_qHow often would you like fish to bite?\n\n[half]"
-	//often sometimes periodic rare random
 	
 	if fishrate == "Often"; "\q[☑Often,OnFishRateChange,Often]"
 	else; "\q[☐Often,OnFishRateChange,Often]"
