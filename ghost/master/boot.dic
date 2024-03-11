@@ -9,6 +9,7 @@ OnFirstBoot
 
 OnInitialize
 {
+	if !ISVAR("fishrate"); fishrate = "Sometimes"
 	if reference0 != "reload"
 	{
 		LastTalk = ""
@@ -36,7 +37,7 @@ OnClose
 variable.initialize
 {
 	journalopen = 0
-	if fishrate == ""; fishrate = "Sometimes"
+	fishrate = "Sometimes"
 }
 
 SetFishingTime
