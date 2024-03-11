@@ -36,7 +36,7 @@ OnClose
 variable.initialize
 {
 	journalopen = 0
-	fishrate = "Sometimes"
+	if fishrate == ""; fishrate = "Sometimes"
 }
 
 SetFishingTime
