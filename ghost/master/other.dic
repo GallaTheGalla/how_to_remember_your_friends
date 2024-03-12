@@ -1,3 +1,24 @@
+AddEntry
+{
+    if ASEARCH(_argv[0],EntryFlags) == -1
+    {
+        EntryFlags ,= _argv[0]
+    }
+}
+
+AllEntriesFound
+{
+    foreach EntryArray; _entry
+    {
+        if ASEARCH(_entry,EntryFlags) != -1
+        {
+             0
+             return
+        }
+    }
+    1
+}
+
 BalloonIsOpen
 {
     "balloon" _in_ status
@@ -7,6 +28,25 @@ displayjournal
 {
 	if journalopen; "\1\s[10]"
     else; "\1\s[-1]"
+}
+
+EntriesNotObtained
+{
+    _output = IARRAY
+    foreach EntryArray; _entry
+    {
+        if ASEARCH(_entry,EntryFlags) == -1
+        {
+             _output ,= _entry
+        }
+    }
+    _output
+}
+
+Flag
+{
+	if ASEARCH(_argv[0],EntryFlags) != -1; 1
+	else; 0
 }
 
 OnTranslate
@@ -24,6 +64,13 @@ OnTranslate
 OnAnchorSelect
 {
 	if "http://" _in_ reference0 || "https://" _in_ reference0; "\j[""%(reference0)""]"
+}
+
+OnGetNewEntry
+{
+    _entry = ANY(EntriesNotObtained)
+    AddEntry(_entry)
+    "\1\b[6]\![bind,Entry,%(_entry),1]Found %(_entry).\w8\w8\w8\w8\0\s[0]\x\t"
 }
 
 OnJournalOpen
@@ -58,22 +105,20 @@ OnNotifyDressupInfo
 		_category = _page[1]
 		_item_name = _page[2]
 		
-		LOGGING("_page[4]: %(_page[4])")
-		if _id == "1" && _page[1] == "Page" && _page[4] == "1"
-		{
-			CurrentPage = _item_name
-			LOGGING("====================================================================")
-			LOGGING("CurrentPage: %(CurrentPage)")
-		}
+		if _id == "1" && _page[1] == "Page" && _page[4] == "1"; CurrentPage = _item_name
 	}
 }
 
 OnSecondChange
 {
-    if GETSECCOUNT >= FishingTime
+	if GETSECCOUNT >= FishingTime
     {
          SetFishingTime
-         "\0\s[20]Fishing Time!"
+		 --
+         if ARRAYSIZE(EntriesNotObtained) > 0
+		{
+			"\0\s[20]"
+		}
     }
 }
 
@@ -105,14 +150,6 @@ OnWindowStateRestore
 	displayjournal
 	--
 	"\0\s[0]"
-}
-
-PageArray : array
-{
-	"Open"
-	"Gardening"
-	"Lost Items"
-	"Old Toys"
 }
 
 WearingDressup

@@ -2,6 +2,8 @@ OnFirstBoot
 {
 	variable.initialize
 	--
+	EntryFlags = IARRAY
+	--
 	LastTalk = ""
 	--
 	"\![raise,OnBoot]"
