@@ -24,14 +24,13 @@ OnBoot
 	--
 	displayjournal
 	--
-	"\0\s[0]Hello %(username).\w8 Good to see you."
-	"\0\s[0]Hello.\w8 Ready to make something cool?"
+	"Another day, another fish."
 }
 
 OnClose
 {
-	"\0\s[0]Farewell."
-	"\0\s[0]Goodbye."
+	"There’s always next time..."
+	"It’ll be a while before the next catch..."
 	--
 	"\w8\w8\-"
 }

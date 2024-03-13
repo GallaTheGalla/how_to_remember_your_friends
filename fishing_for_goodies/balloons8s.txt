@@ -1,4 +1,5 @@
 arrow.filename,arrowjournal
+marker.filename,markerjournal
 
 onlinemarker.filename,onlinejournal
 onlinemarker.interval,75

@@ -6,7 +6,7 @@ overlay_outside_balloon,1
 
 
 //——— Basic information ———
-name,fishing for goodies
+name,Fishing For Goodies
 craftman,Reel-Inna Boatman & Swampbubble
 craftmanurl,Reel-Inna Boatman & Swampbubble
 homeurl,

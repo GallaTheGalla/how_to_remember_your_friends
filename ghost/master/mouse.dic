@@ -91,24 +91,3 @@ OnMouseLeave
 	if reference4 == "Teddy"; "\1\![bind,Highlight,Teddy,0]"
 	if reference4 == "Yoyo"; "\1\![bind,Highlight,Yoyo,0]"
 }
-
-OnItemDialogue
-{
-	if _argv[0] == "Pot"; "Pot Dialogue"
-	if _argv[0] == "Seeds"; "Seed Dialogue"
-	if _argv[0] == "Shears"; "Shears Dialogue"
-	if _argv[0] == "Spade"; "Spade Dialogue"
-	if _argv[0] == "Vine"; "Vine Dialogue"
-	if _argv[0] == "Watering Can"; "Watering Can Dialogue"
-	
-	if _argv[0] == "CD"; "CD Dialogue"
-	if _argv[0] == "Pocket Watch"; "Pocket Watch Dialogue"
-	if _argv[0] == "Diary"; "Diary Dialogue"
-	if _argv[0] == "Key"; "Key Dialogue"
-	if _argv[0] == "Photograph"; "Photograph Dialogue"
-	
-	if _argv[0] == "Clown"; "Clown Dialogue"
-	if _argv[0] == "Spinning Top"; "Spinning Top Dialogue"
-	if _argv[0] == "Teddy"; "Teddy Dialogue"
-	if _argv[0] == "Yoyo"; "Yoyo Dialogue"
-}
