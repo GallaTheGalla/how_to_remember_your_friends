@@ -35,12 +35,25 @@ OnSakuraMenu : all
 	if _talkrate == "10 minutes"; "\q[☑10m,OnTalkRateChange,600]"
 	else; "\q[☐10m,OnTalkRateChange,600]"
 	
-	"\n\n\![*]\q[Nevermind,blank]"	
+	"\n\n\![*]\q[Reset,OnResetConfirmation]%(newline)\f[align,right]\![*]\q[Nevermind,blank]"	
 }
 
 OnLastTalk
 {
 	LastTalk
+}
+
+OnResetConfirmation : all
+{
+	"\b2\_qAre you sure you want to reset your progress?\n"
+	"\f[color,disable]This will reset all of the items you have caught.\f[color,default]\n\n[half]"
+	"\![*]\q[No,OnSakuraMenu]%(newline)\f[align,right]\![*]\q[Yes,OnResetProgress]"
+}
+
+OnResetProgress : all
+{
+	EntryFlags = IARRAY
+	"weep worp"
 }
 
 OnTalkRateChange

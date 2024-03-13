@@ -24,13 +24,13 @@ OnBoot
 	--
 	displayjournal
 	--
-	"Another day, another fish."
+	"\0\s[0]Another day, another fish. "
 }
 
 OnClose
 {
-	"There’s always next time..."
-	"It’ll be a while before the next catch..."
+	"There’s always next time... "
+	"It’ll be a while before the next catch... "
 	--
 	"\w8\w8\-"
 }
