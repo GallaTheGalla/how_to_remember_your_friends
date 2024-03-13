@@ -15,3 +15,5 @@ kero.name,Scrapbook
 icon,icon.ico
 
 sstp.allowunspecifiedsend,0
+
+balloon,Fishing For Goodies
