@@ -1,9 +1,18 @@
 OnKeroMenu : all
 {
-	"\1\b2\![set,autoscroll,disable]"
-	"\n[half]\_q"
-	
-	"\![*]\q[Nevermind,blank]"
+	"\1\b8\![set,autoscroll,disable]\_q"
+	_menu = IARRAY
+	foreach PageArray; _page
+	{
+		"     \![*]\q[%(_page),OnPageChange,%(_page)]\n"
+	}
+	"\n     \![*]\q[Nevermind,blank]"
+}
+
+OnPageChange
+{
+	_page = reference0
+	"\1\![bind,Page,%(_page)]"
 }
 
 EntryArray : array
