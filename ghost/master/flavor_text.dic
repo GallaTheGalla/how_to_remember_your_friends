@@ -1,11 +1,11 @@
 OnItemDialogue
 {
-	if _argv[0] == "Pot"; "After ☐☐☐☐☐☐ died, his plants began to die with him. His younger sister moved into his house and tried to take care of the garden... but she was never as good as taking care of plants as him. After a few years, she went to move in with her boyfriend. Leaving all the plants to die. "
-	if _argv[0] == "Seeds"; "There was never a seed unused in ☐☐☐☐☐☐’s garden. Everything had a place. Every seed was always planted, even if he gave some of the finished potted plants away. "
-	if _argv[0] == "Shears"; "I remember back when ☐☐☐☐☐☐ was first getting into gardening, he offered to trim the hedge for his dad. But since it was overgrown, once he trimmed it back to a more reasonable size, there were barely any leaves left. "
-	if _argv[0] == "Spade"; "☐☐☐☐☐☐ had a gardening toolbelt, and in it, his special spade. What made it so special? I don’t know. He never really explained that to me. I wish I asked him when I had the chance. "
-	if _argv[0] == "Vine"; "☐☐☐☐☐☐ loved the idea of his house getting taken back by nature after he died. He had so many vines that crawled up the walls. He would have loved to see how beautiful it is. "
-	if _argv[0] == "Watering Can"; "☐☐☐☐☐☐ had a green watering can, and then would wonder why he always couldn’t find it. It blended in with the greenery of his garden. "
+	if _argv[0] == "Pot"; "\0\b4After XXXXXX died, his plants began to die with him. His younger sister moved into his house and tried to take care of the garden... but she was never as good at taking care of plants as him. After a few years, she went to move in with her boyfriend. Leaving all the plants to die. "
+	if _argv[0] == "Seeds"; "\0\b2There was never a seed unused in XXXXXX’s garden. Everything had a place. Every seed was always planted, even if he gave some of the finished potted plants away. "
+	if _argv[0] == "Shears"; "\0\b4I remember back when XXXXXX was first getting into gardening, he offered to trim the hedge for his dad. But since it was overgrown, once he trimmed it back to a more reasonable size, there were barely any leaves left. "
+	if _argv[0] == "Spade"; "\0\b2XXXXXX had a gardening toolbelt, and in it, his special spade. What made it so special? I don’t know. He never really explained that to me. I wish I asked him when I had the chance. "
+	if _argv[0] == "Vine"; "\0\b2XXXXXX loved the idea of his house getting taken back by nature after he died. He had so many vines that crawled up the walls. He would have loved to see how beautiful it is. "
+	if _argv[0] == "Watering Can"; "\0\b2XXXXXX had a green watering can, and then would wonder why he always couldn’t find it. It blended in with the greenery of his garden. "
 	
 	if _argv[0] == "CD"; "CD Dialogue"
 	if _argv[0] == "Pocket Watch"; "Pocket Watch Dialogue"
@@ -17,4 +17,8 @@ OnItemDialogue
 	if _argv[0] == "Spinning Top"; "Spinning Top Dialogue"
 	if _argv[0] == "Teddy"; "Teddy Dialogue"
 	if _argv[0] == "Yoyo"; "Yoyo Dialogue"
+	
+	if _argv[0] == "Hook"; "Hook Dialogue"
+	if _argv[0] == "Lure"; "Lure Dialogue"
+	if _argv[0] == "Tuna"; "Tuna Dialogue"
 }

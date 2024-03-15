@@ -53,3 +53,12 @@ kero.bindgroup1023.name,Highlight,Clown
 kero.bindgroup1025.name,Highlight,Spinning Top
 kero.bindgroup1027.name,Highlight,Teddy
 kero.bindgroup1029.name,Highlight,Yoyo
+
+kero.bindgroup106.name,Page,Big Catch
+kero.bindgroup1030.name,Entry,Hook
+kero.bindgroup1032.name,Entry,Lure
+kero.bindgroup1034.name,Entry,Tuna
+kero.bindgroup1034.addid,10002
+kero.bindgroup1031.name,Highlight,Hook
+kero.bindgroup1033.name,Highlight,Lure
+kero.bindgroup1035.name,Highlight,Tuna

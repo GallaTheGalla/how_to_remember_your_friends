@@ -12,7 +12,7 @@ OnKeroMenu : all
 OnPageChange
 {
 	_page = reference0
-	"\1\![bind,Page,%(_page)]"
+	"\1\![bind,Page,%(_page),1]"
 }
 
 EntryArray : array
@@ -34,6 +34,10 @@ EntryArray : array
 	"Spinning Top"
 	"Teddy"
 	"Yoyo"
+	
+	"Hook"
+	"Lure"
+	"Tuna"
 }
 
 PageArray : array
@@ -42,5 +46,6 @@ PageArray : array
 	"Gardening"
 	"Lost Items"
 	"Old Toys"
+	"Big Catch"
 }
 

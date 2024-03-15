@@ -64,6 +64,10 @@ OnMouseEnter
 	if reference4 == "Spinning Top"; "\1\![bind,Highlight,Spinning Top,1]"
 	if reference4 == "Teddy"; "\1\![bind,Highlight,Teddy,1]"
 	if reference4 == "Yoyo"; "\1\![bind,Highlight,Yoyo,1]"
+	
+	if reference4 == "Hook"; "\1\![bind,Highlight,Hook,1]"
+	if reference4 == "Lure"; "\1\![bind,Highlight,Lure,1]"
+	if reference4 == "Tuna"; "\1\![bind,Highlight,Tuna,1]"
 }
 
 OnMouseLeave
@@ -90,4 +94,8 @@ OnMouseLeave
 	if reference4 == "Spinning Top"; "\1\![bind,Highlight,Spinning Top,0]"
 	if reference4 == "Teddy"; "\1\![bind,Highlight,Teddy,0]"
 	if reference4 == "Yoyo"; "\1\![bind,Highlight,Yoyo,0]"
+	
+	if reference4 == "Hook"; "\1\![bind,Highlight,Hook,0]"
+	if reference4 == "Lure"; "\1\![bind,Highlight,Lure,0]"
+	if reference4 == "Tuna"; "\1\![bind,Highlight,Tuna,0]"
 }

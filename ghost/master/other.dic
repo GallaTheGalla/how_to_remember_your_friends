@@ -82,7 +82,7 @@ OnGetNewEntry
 {
     _entry = ANY(EntriesNotObtained)
     AddEntry(_entry)
-    "\1\b[6]\![bind,Entry,%(_entry),1]Found %(_entry).\w8\w8\w8\w8\0\s[0]\x\t"
+    "\1\b[6]\![bind,Entry,%(_entry),1]Found %(_entry). \x\t\0\s[0]"
 }
 
 OnJournalOpen
