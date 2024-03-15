@@ -35,7 +35,7 @@ OnMouseDoubleClick
 		}
 		else
 		{
-			OnKeroMenu
+			if reference4 == ""; OnKeroMenu
 		}
 	}
 }
