@@ -12,6 +12,7 @@ seriko.use_self_alpha,1
 kero.menu,auto
 kero.bindoption11.group,Page,mustselect
 kero.bindgroup11.default,11
+kero.bindoption101.group,Complete,multiple
 kero.bindoption1000.group,Entry,multiple
 
 kero.bindgroup11.name,Page,Open
@@ -19,6 +20,7 @@ kero.bindgroup10000.name,Page Turn,Previous
 kero.bindgroup10001.name,Page Turn,Next
 
 kero.bindgroup100.name,Page,Gardening
+kero.bindgroup101.name,Complete,Gardening
 kero.bindgroup1000.name,Entry,Pot
 kero.bindgroup1002.name,Entry,Seeds
 kero.bindgroup1004.name,Entry,Shears
@@ -33,6 +35,7 @@ kero.bindgroup1009.name,Highlight,Vine
 kero.bindgroup1011.name,Highlight,Watering Can
 
 kero.bindgroup102.name,Page,Lost Items
+kero.bindgroup103.name,Complete,Lost Items
 kero.bindgroup1012.name,Entry,CD
 kero.bindgroup1014.name,Entry,Pocket Watch
 kero.bindgroup1016.name,Entry,Diary
@@ -55,6 +58,7 @@ kero.bindgroup1027.name,Highlight,Teddy
 kero.bindgroup1029.name,Highlight,Yoyo
 
 kero.bindgroup106.name,Page,Big Catch
+kero.bindgroup107.name,Complete,Big Catch
 kero.bindgroup1030.name,Entry,Hook
 kero.bindgroup1032.name,Entry,Lure
 kero.bindgroup1034.name,Entry,Tuna

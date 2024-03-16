@@ -249,6 +249,9 @@ surface102
 {
 	element0,overlay,scrapbookopen.png,0,0
 	
+	animation103.interval,bind
+	animation103.pattern0,overlay,103,0,0,0
+	
 	animation1012.interval,bind
 	animation1012.pattern0,overlay,1012,0,0,0
 	animation1012.collisionex0,CD,polygon,269,96,286,95,310,102,318,111,324,125,327,144,328,162,323,173,313,184,298,194,282,198,262,198,244,192,231,180,223,166,221,146,229,122,242,105,257,99
@@ -284,6 +287,12 @@ animation1012.collisionex1,CD,polygon,266,44,300,35,305,50,302,63,300,72,288,75,
 	
 	animation1021.interval,bind
 	animation1021.pattern0,overlay,1021,0,0,0
+}
+
+//lost items complete
+surface103
+{
+	element0,overlay,lostitems_complete.png,0,0
 }
 
 //lost items entries
@@ -426,6 +435,9 @@ surface106
 {
 	element0,overlay,scrapbookopen.png,0,0
 	
+	animation107.interval,bind
+	animation107.pattern0,overlay,107,0,0,0
+	
 	animation1030.interval,bind
 	animation1030.pattern0,overlay,1030,0,0,0
 	animation1030.collisionex0,Hook,polygon,282,163,291,170,294,174,297,178,297,181,290,174,290,177,292,180,292,183,294,184,296,185,298,186,306,186,311,181,312,175,312,172,311,168,310,164,309,161,308,158,307,155,306,152,305,149,304,147,305,145,306,142,307,140,308,138,307,136,307,135,302,135,300,137,299,138,299,142,301,145,301,146,303,146,304,147,303,149,301,149,300,148,299,146,297,144,296,142,296,138,298,135,300,133,302,131,307,131,309,133,310,139,309,144,308,147,310,151,311,157,313,161,314,165,316,170,316,173,316,181,316,183,313,186,311,188,307,190,303,191,299,191,295,190,293,189,290,186,288,183,287,180,286,176,285,171,284,166,283,163
@@ -450,6 +462,12 @@ surface106
 	//tuna layering fix
 	animation10002.interval,bind
 	animation10002.pattern0,overlay,10002,0,0,0
+}
+
+//big catch complete
+surface107
+{
+	element0,overlay,big_catch_complete.png,0,0
 }
 
 //big catch entries

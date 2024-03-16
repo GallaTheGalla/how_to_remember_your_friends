@@ -52,6 +52,10 @@ OnResetConfirmation : all
 
 OnResetProgress : all
 {
+	foreach EntryArray; _unbind
+	{
+		"\1\![bind,Entry,%(_unbind),0]"
+	}
 	EntryFlags = IARRAY
 	"weep worp"
 }

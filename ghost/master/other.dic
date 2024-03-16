@@ -49,6 +49,18 @@ Flag
 	else; 0
 }
 
+//for manual linebreaks
+n
+{
+	if SHIORI3FW.BalloonName == "Fishing For Goodies"; "\n"
+	else; ""
+}
+
+newline
+{
+    "\n \n[-100]"
+}
+
 OnTranslate
 {
 	_talk = reference0
@@ -82,7 +94,7 @@ OnGetNewEntry
 {
     _entry = ANY(EntriesNotObtained)
     AddEntry(_entry)
-    "\1\b[6]\![bind,Entry,%(_entry),1]Found %(_entry). \x\t\0\s[0]"
+    "\1\b[6]\![bind,Entry,%(_entry),1]%(PageComplete)Found %(_entry). \x\t\0\s[0]"
 }
 
 OnJournalOpen
@@ -168,11 +180,4 @@ WearingDressup
 {
 	if ASEARCH(_argv[0],CurrentDressups) != -1; 1
 	else; 0
-}
-
-//for manual linebreaks
-n
-{
-	if SHIORI3FW.BalloonName == "Fishing For Goodies"; "\n"
-	else; ""
 }

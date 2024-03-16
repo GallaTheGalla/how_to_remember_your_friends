@@ -1,7 +1,6 @@
 OnKeroMenu : all
 {
 	"\1\b8\![set,autoscroll,disable]\_q"
-	_menu = IARRAY
 	foreach PageArray; _page
 	{
 		"     \![*]\q[%(_page),OnPageChange,%(_page)]\n"
@@ -13,6 +12,18 @@ OnPageChange
 {
 	_page = reference0
 	"\1\![bind,Page,%(_page),1]"
+}
+
+PageComplete : all
+{
+    //gardening
+	if ASEARCH("Pot",EntryFlags) != -1 && ASEARCH("Seeds",EntryFlags) != -1 && ASEARCH("Shears",EntryFlags) != -1 && ASEARCH("Spade",EntryFlags) != -1 && ASEARCH("Vine",EntryFlags) != -1 && ASEARCH("Watering Can",EntryFlags) != -1; "\![bind,Complete,Gardening,1]"
+	//lost items
+	if ASEARCH("CD",EntryFlags) != -1 && ASEARCH("Pocket Watch",EntryFlags) != -1 && ASEARCH("Diary",EntryFlags) != -1 && ASEARCH("Key",EntryFlags) != -1 && ASEARCH("Photograph",EntryFlags) != -1; "\![bind,Complete,Lost Items,1]"
+	//old toys
+	//if ASEARCH("Clown",EntryFlags) != -1 && ASEARCH("Spinning Top",EntryFlags) != -1 && ASEARCH("Teddy",EntryFlags) != -1 && ASEARCH("Yoyo",EntryFlags) != -1; "\![bind,Complete,Old Toys,1]"
+	//big catch
+	if ASEARCH("Hook",EntryFlags) != -1 && ASEARCH("Lure",EntryFlags) != -1 && ASEARCH("Tuna",EntryFlags) != -1; "\![bind,Complete,Big Catch,1]"
 }
 
 EntryArray : array
