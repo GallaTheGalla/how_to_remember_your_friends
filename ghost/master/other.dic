@@ -169,3 +169,10 @@ WearingDressup
 	if ASEARCH(_argv[0],CurrentDressups) != -1; 1
 	else; 0
 }
+
+//for manual linebreaks
+n
+{
+	if SHIORI3FW.BalloonName == "Fishing For Goodies"; "\n"
+	else; ""
+}
