@@ -13,5 +13,18 @@ OnAiTalk
 
 RandomTalk : nonoverlap_pool
 {
-	
+	"\0\b4I always thought people woke up before dawn to fish because they planned a full day around it. Like a little vacation close to home. Recently I've learned it's because the world is different that early. It's... quieter. Calmer. With more space for your thoughts. "
+	"\0\b2There's so much to do today, so why am I still sitting here...? It cant be helped. Sometimes sitting needs to be done, too. "
+	"\0\b0Feeling stiff... ahh... but getting up is so difficult... "
+	"\0\b0I should do something nice for myself today. Like %(asatreat). "
+	"\0\b0Sometimes I wonder what happened to the people I lost along the way. Where are they now? "
+	"\0\b0So tired... but it's not time to rest yet. "
+	"\0\b0When it's so quiet, you grow to appreciate all the little noises. "
+	"\0\b0I was going to %(asatreat), but I ended up going for a jog instead. It wasn't a bad trade.  "
+	"\0\b0Might be time to stretch. "
+	"\0\b0Need some %(drink). "
+	"\0\b0Headache... I think I need to %(headache). "
+	"\0\b2It used to take 10 minutes to walk down to the lake. These days, it takes me twice as long. I guess I don't feel like I need to rush anymore. "
+	"\0\b0Hm, I should reapply my sunscreen. Those sunrays hurt at any time of the day. "
+	"\0\b0I should’ve brought more snacks. I’m really craving some %(food). "
 }

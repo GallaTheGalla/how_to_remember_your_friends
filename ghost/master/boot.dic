@@ -25,12 +25,16 @@ OnBoot
 	displayjournal
 	--
 	"\0\s[0]Another day, another fish. "
+	"Oh, I forgot my coffee this morning. "
+	"I don't know if this is considered a break, but it's nice to do something different for a while. "
+
 }
 
 OnClose
 {
 	"There’s always next time... "
 	"It’ll be a while before the next catch... "
+	"Yeah, I think it's time to go home. "
 	--
 	"\w8\w8\-"
 }

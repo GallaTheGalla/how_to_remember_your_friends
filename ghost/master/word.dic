@@ -1,0 +1,130 @@
+alcohol
+{
+	"brandy"
+	"rum"
+	"whiskey"
+	"gin"
+	"vodka"
+	"wine"
+	"mead"
+	"cider"
+}
+
+asatreat
+{
+	"make myself pancakes"
+	"buy a new scented candle"
+	"tidy up that side table"
+	"have a nap"
+	"go see the butterfly fields"
+	"moisturise my scalp"
+	"fold my laundry"
+	"prep meals for the week"
+	"organize my craft supplies"
+	"get a new pill organizer"
+	"warm up water for a foot bath"
+	"start a new book"
+	"eat some %(food)"
+	"try a new hobby"
+	"draw %(draw)"
+}
+
+draw
+{
+	"some snails"
+	"a boat"
+	"birds"
+	"flowers"
+	"big scary monsters"
+	"a self-portrait"
+	"pose gestures"
+	"isometric patterns"
+	"potential tattoo designs"
+	"teeth"
+	"raccoons"
+}
+
+drink
+{
+	"water"
+	"coffee"
+	"%(juice) juice"
+	"hot cocoa"
+	"tea"
+	"lemonade"
+	"%(alcohol)"
+	"%(nut) milk"
+}
+
+food
+{
+	"candy"
+	"ice cream"
+	"yogurt"
+	"pizza"
+	"oatmeal"
+	"%(soup) soup"
+}
+
+headache
+{
+	"sleep more"
+	"stop staying up so late"
+	"hydrate better"
+	"stretch my neck"
+	"relax my face"
+	"grab a %(ANY('hot,cold')) compress"
+	"watch my caffiene"
+}
+
+juice
+{
+	"orange"
+	"tomato"
+	"carrot"
+	"pineapple"
+	"apple"
+	"grape"
+	"mango"
+	"cranberry"
+	"blueberry"
+	"grapefruit"
+	"papaya"
+	"pomegranate"
+	"strawberry"
+	"turnip"
+}
+
+nut
+{
+	"coconut"
+	"almond"
+	"oat"
+	"rice"
+	"soy"
+	"hazelnut"
+	"chocolate"
+	"strawberry"
+	"banana"
+	"barley"
+	"pistachio"
+	"pumpkin seed"
+}
+
+soup
+{
+	"pumpkin"
+	"tomato"
+	"chicken noodle"
+	"lentil"
+	"split pea"
+	"mushroom"
+	"black bean"
+	"sweet corn"
+	"potato"
+	"roasted vegetable"
+	"cauliflower"
+	"celery"
+	"beef barley"
+	"egg drop"
+}
