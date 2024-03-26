@@ -51,11 +51,11 @@ cursor.pen.color.b,036
 cursor.style,underline
 
 //——— Arrows ———
-arrow0.x,-17
-arrow0.y,10
+arrow0.x,-14
+arrow0.y,6
 
-arrow1.x,-17
-arrow1.y,-32
+arrow1.x,-14
+arrow1.y,-28
 
 
 //——— Online marker ———
@@ -67,14 +67,14 @@ onlinemarker.y,9
 
 //——— SSTP ———
 sstpmarker.x,24
-sstpmarker.y,11
+sstpmarker.y,9
 
 sstpmessage.font.name,Calibri
 sstpmessage.font.height,11
 
 sstpmessage.x,35
 sstpmessage.xr,-20
-sstpmessage.y,8
+sstpmessage.y,6
 
 sstpmessage.font.color.r,185
 sstpmessage.font.color.g,195
@@ -86,7 +86,7 @@ number.font.name,Calibri
 number.font.height,11
 
 number.xr,-25
-number.y,-22
+number.y,-21
 
 number.font.color.r,185
 number.font.color.g,195

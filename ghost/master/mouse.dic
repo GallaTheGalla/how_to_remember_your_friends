@@ -1,28 +1,17 @@
 OnMouseClick
 {
-	if reference4 == "Catch"
+	if reference3 == 1
 	{
-		"\0\s[30]\![raise,OnGetNewEntry]"
+		if reference4 == "Open"; "\![raise,OnTogglePage]"
+		
+		elseif reference4 == "Next"; "\![raise,OnTogglePage]"
+		
+		elseif reference4 == "Previous"; "\![raise,OnTogglePageReverse]"
+		
+		elseif reference4 != ""; OnItemDialogue(reference4)
 	}
 	
-	if reference4 == "Open"
-	{
-		"\![raise,OnTogglePage]"
-	}
-	
-	if reference4 == "Next"
-	{
-		"\![raise,OnTogglePage]"
-	}
-	
-	if reference4 == "Previous"
-	{
-		"\![raise,OnTogglePageReverse]"
-	}
-	else
-	{
-		OnItemDialogue(reference4)
-	}
+	elseif reference4 == "Catch"; "\0\s[30]\![raise,OnGetNewEntry]"
 }
 
 OnMouseDoubleClick
@@ -31,7 +20,8 @@ OnMouseDoubleClick
 	{
 		if reference3 == 0
 		{
-			OnSakuraMenu
+			if reference4 == "Catch"; "\0\s[30]\![raise,OnGetNewEntry]"
+			else; OnSakuraMenu
 		}
 		else
 		{
@@ -42,60 +32,66 @@ OnMouseDoubleClick
 
 OnMouseEnter
 {
-	if BalloonIsOpen; "\C"
-	--
-	if reference4 == "Previous"; "\1\![bind,Page Turn,Previous,1]"
-	if reference4 == "Next"; "\1\![bind,Page Turn,Next,1]"
-	
-	if reference4 == "Pot"; "\1\![bind,Highlight,Pot,1]"
-	if reference4 == "Seeds"; "\1\![bind,Highlight,Seeds,1]"
-	if reference4 == "Shears"; "\1\![bind,Highlight,Shears,1]"
-	if reference4 == "Spade"; "\1\![bind,Highlight,Spade,1]"
-	if reference4 == "Vine"; "\1\![bind,Highlight,Vine,1]"
-	if reference4 == "Watering Can"; "\1\![bind,Highlight,Watering Can,1]"
-	
-	if reference4 == "CD"; "\1\![bind,Highlight,CD,1]"
-	if reference4 == "Pocket Watch"; "\1\![bind,Highlight,Pocket Watch,1]"
-	if reference4 == "Diary"; "\1\![bind,Highlight,Diary,1]"
-	if reference4 == "Key"; "\1\![bind,Highlight,Key,1]"
-	if reference4 == "Photograph"; "\1\![bind,Highlight,Photograph,1]"
-	
-	if reference4 == "Clown"; "\1\![bind,Highlight,Clown,1]"
-	if reference4 == "Spinning Top"; "\1\![bind,Highlight,Spinning Top,1]"
-	if reference4 == "Teddy"; "\1\![bind,Highlight,Teddy,1]"
-	if reference4 == "Yoyo"; "\1\![bind,Highlight,Yoyo,1]"
-	
-	if reference4 == "Hook"; "\1\![bind,Highlight,Hook,1]"
-	if reference4 == "Lure"; "\1\![bind,Highlight,Lure,1]"
-	if reference4 == "Tuna"; "\1\![bind,Highlight,Tuna,1]"
+	if !("__ITEM_DIALOGUE__" !_in_ SHIORI3FW.LastTalk && !SHIORI3FW.CanTalk)
+    {
+		if BalloonIsOpen; "\C"
+		--
+		if reference4 == "Previous"; "\1\![bind,Page Turn,Previous,1]"
+		if reference4 == "Next"; "\1\![bind,Page Turn,Next,1]"
+		
+		if reference4 == "Pot"; "\1\![bind,Highlight,Pot,1]"
+		if reference4 == "Seeds"; "\1\![bind,Highlight,Seeds,1]"
+		if reference4 == "Shears"; "\1\![bind,Highlight,Shears,1]"
+		if reference4 == "Spade"; "\1\![bind,Highlight,Spade,1]"
+		if reference4 == "Vine"; "\1\![bind,Highlight,Vine,1]"
+		if reference4 == "Watering Can"; "\1\![bind,Highlight,Watering Can,1]"
+		
+		if reference4 == "CD"; "\1\![bind,Highlight,CD,1]"
+		if reference4 == "Pocket Watch"; "\1\![bind,Highlight,Pocket Watch,1]"
+		if reference4 == "Diary"; "\1\![bind,Highlight,Diary,1]"
+		if reference4 == "Key"; "\1\![bind,Highlight,Key,1]"
+		if reference4 == "Photograph"; "\1\![bind,Highlight,Photograph,1]"
+		
+		if reference4 == "Clown"; "\1\![bind,Highlight,Clown,1]"
+		if reference4 == "Spinning Top"; "\1\![bind,Highlight,Spinning Top,1]"
+		if reference4 == "Teddy"; "\1\![bind,Highlight,Teddy,1]"
+		if reference4 == "Yoyo"; "\1\![bind,Highlight,Yoyo,1]"
+		
+		if reference4 == "Hook"; "\1\![bind,Highlight,Hook,1]"
+		if reference4 == "Lure"; "\1\![bind,Highlight,Lure,1]"
+		if reference4 == "Tuna"; "\1\![bind,Highlight,Tuna,1]"
+	}
 }
 
 OnMouseLeave
 {
-	if BalloonIsOpen; "\C"
-	--
-	if reference4 == "Previous"; "\1\![bind,Page Turn,Previous,0]"
-	if reference4 == "Next"; "\1\![bind,Page Turn,Next,0]"
-	
-	if reference4 == "Pot"; "\1\![bind,Highlight,Pot,0]"
-	if reference4 == "Seeds"; "\1\![bind,Highlight,Seeds,0]"
-	if reference4 == "Shears"; "\1\![bind,Highlight,Shears,0]"
-	if reference4 == "Spade"; "\1\![bind,Highlight,Spade,0]"
-	if reference4 == "Vine"; "\1\![bind,Highlight,Vine,0]"
-	if reference4 == "Watering Can"; "\1\![bind,Highlight,Watering Can,0]"
-	
-	if reference4 == "CD"; "\1\![bind,Highlight,CD,0]"
-	if reference4 == "Pocket Watch"; "\1\![bind,Highlight,Pocket Watch,0]"
-	if reference4 == "Diary"; "\1\![bind,Highlight,Diary,0]"
-	if reference4 == "Key"; "\1\![bind,Highlight,Key,0]"
-	if reference4 == "Photograph"; "\1\![bind,Highlight,Photograph,0]"
-	
-	if reference4 == "Clown"; "\1\![bind,Highlight,Clown,0]"
-	if reference4 == "Spinning Top"; "\1\![bind,Highlight,Spinning Top,0]"
-	if reference4 == "Teddy"; "\1\![bind,Highlight,Teddy,0]"
-	if reference4 == "Yoyo"; "\1\![bind,Highlight,Yoyo,0]"
-	
-	if reference4 == "Hook"; "\1\![bind,Highlight,Hook,0]"
-	if reference4 == "Lure"; "\1\![bind,Highlight,Lure,0]"
-	if reference4 == "Tuna"; "\1\![bind,Highlight,Tuna,0]"
+	if !("__ITEM_DIALOGUE__" !_in_ SHIORI3FW.LastTalk && !SHIORI3FW.CanTalk)
+    {
+		if BalloonIsOpen; "\C"
+		--
+		if reference4 == "Previous"; "\1\![bind,Page Turn,Previous,0]"
+		if reference4 == "Next"; "\1\![bind,Page Turn,Next,0]"
+		
+		if reference4 == "Pot"; "\1\![bind,Highlight,Pot,0]"
+		if reference4 == "Seeds"; "\1\![bind,Highlight,Seeds,0]"
+		if reference4 == "Shears"; "\1\![bind,Highlight,Shears,0]"
+		if reference4 == "Spade"; "\1\![bind,Highlight,Spade,0]"
+		if reference4 == "Vine"; "\1\![bind,Highlight,Vine,0]"
+		if reference4 == "Watering Can"; "\1\![bind,Highlight,Watering Can,0]"
+		
+		if reference4 == "CD"; "\1\![bind,Highlight,CD,0]"
+		if reference4 == "Pocket Watch"; "\1\![bind,Highlight,Pocket Watch,0]"
+		if reference4 == "Diary"; "\1\![bind,Highlight,Diary,0]"
+		if reference4 == "Key"; "\1\![bind,Highlight,Key,0]"
+		if reference4 == "Photograph"; "\1\![bind,Highlight,Photograph,0]"
+		
+		if reference4 == "Clown"; "\1\![bind,Highlight,Clown,0]"
+		if reference4 == "Spinning Top"; "\1\![bind,Highlight,Spinning Top,0]"
+		if reference4 == "Teddy"; "\1\![bind,Highlight,Teddy,0]"
+		if reference4 == "Yoyo"; "\1\![bind,Highlight,Yoyo,0]"
+		
+		if reference4 == "Hook"; "\1\![bind,Highlight,Hook,0]"
+		if reference4 == "Lure"; "\1\![bind,Highlight,Lure,0]"
+		if reference4 == "Tuna"; "\1\![bind,Highlight,Tuna,0]"
+	}
 }

@@ -1,5 +1,8 @@
 OnItemDialogue
 {
+	"\t"
+	--
+	
 	if _argv[0] == "Pot"; "\0\b4After ☐☐☐☐☐☐ died, his plants began to die with him. His younger sister moved into his house and tried to take care of the garden... but she was never as good at taking care of plants as him. After a few years, she went to move in with her boyfriend. Leaving all the plants to die."
 	if _argv[0] == "Seeds"; "\0\b2There was never a seed unused in ☐☐☐☐☐☐’s garden. Everything had a place. Every seed was always planted, even if he gave some of the finished potted plants away."
 	if _argv[0] == "Shears"; "\0\b4I remember back when %(n)☐☐☐☐☐☐ was first getting into gardening, he offered to trim the hedge for his dad. But since it was overgrown, once he trimmed it back to a more reasonable size, there were barely any leaves left."
@@ -21,4 +24,9 @@ OnItemDialogue
 	if _argv[0] == "Hook"; "Hook Dialogue"
 	if _argv[0] == "Lure"; "Lure Dialogue"
 	if _argv[0] == "Tuna"; "Tuna Dialogue"
+	
+	--
+	"\x"
+	--
+	"\e __ITEM_DIALOGUE__"
 }

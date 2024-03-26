@@ -53,7 +53,7 @@ EntryArray : array
 
 PageArray : array
 {
-	"Open"
+	"Cover"
 	"Gardening"
 	"Lost Items"
 	"Old Toys"

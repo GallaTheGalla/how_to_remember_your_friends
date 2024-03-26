@@ -57,6 +57,8 @@ OnResetProgress : all
 		"\1\![bind,Entry,%(_unbind),0]"
 	}
 	EntryFlags = IARRAY
+	"\1\![bind,Complete,,0]"
+	"\1\![bind,Highlight,,0]"
 	"weep worp"
 }
 

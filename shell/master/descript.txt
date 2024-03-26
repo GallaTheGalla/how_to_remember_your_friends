@@ -15,7 +15,7 @@ kero.bindgroup11.default,11
 kero.bindoption101.group,Complete,multiple
 kero.bindoption1000.group,Entry,multiple
 
-kero.bindgroup11.name,Page,Open
+kero.bindgroup11.name,Page,Cover
 kero.bindgroup10000.name,Page Turn,Previous
 kero.bindgroup10001.name,Page Turn,Next
 

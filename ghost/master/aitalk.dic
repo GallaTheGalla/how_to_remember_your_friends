@@ -33,4 +33,12 @@ RandomTalk : nonoverlap_pool
 	"\0\b0There's a lot of boxes left to get through. "
 	"\0\b0I want to lie down on the ground and pretend I'm a worm. I'll hum to try and bring them out to see me. "
 	"\0\b2If I was a book, I'd be %(abook) "
+	"\0\b0I had a nosebleed earlier... seems like a bad omen... "
+	"\0\b0I should make a to-do list. It might help me keep track of everything better. "
 }
+
+todolist
+{{CHAIN
+	"\0\b2\f[align,center]To-Do\n\f[align,default]\n\![*]Figure out what goes on a to-do list"
+	"\0\b4\f[align,center]To-Do\n\f[align,default]\n\![*]\f[strike,1]Figure out what goes on a to-do list\f[strike,0]\n\![*]Find paper and a pencil so I'm not just listing things to myself\e:chain=end"
+}}CHAIN
