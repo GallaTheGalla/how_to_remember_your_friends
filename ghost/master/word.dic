@@ -1,3 +1,12 @@
+abook
+{
+	"a well-worn paperback. One of those ones your grandmother read, and then your mother, and then you. It had some steamy scenes that made you feel weird about your grandma reading it, but at the same time, what better way to be connected?"
+	"a second-hand textbook. The dirt has been cleaned off of the cover, but there are still notes in the margins. Lines are still highlighted. You can see what someone else thought was important, and maybe it helps you study just a little bit easier."
+	"the first publication from a new author. It's a limited run printing that sits in the corner of bookstores for weeks at a time. It will find its popularity among those that need it, and that's what matters."
+	"the E in an encyclopedia set. There's a lot of good articles under E."
+	"the manuscript of an Iron Age farmer attempting to preserve their agricultural techniques for future generations."
+}
+
 alcohol
 {
 	"brandy"
@@ -8,6 +17,31 @@ alcohol
 	"wine"
 	"mead"
 	"cider"
+}
+
+ananimal
+{
+	"a frog"
+	"a goose"
+	"a duck"
+	"a crow"
+	"a raven"
+	"a raccoon"
+	"a oppossum"
+	"a rat"
+	"a mouse"
+	"a squirrel"
+	"a rabbit"
+	"a hare"
+	"a deer"
+	"a fox"
+	"a bat"
+	"an owl"
+	"a toad"
+	"a quail"
+	"a pigeon"
+	"a puffin"
+	"an albatross"
 }
 
 asatreat

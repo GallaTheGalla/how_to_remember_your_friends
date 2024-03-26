@@ -7,11 +7,11 @@ OnItemDialogue
 	if _argv[0] == "Vine"; "\0\b2☐☐☐☐☐☐ loved the idea of his house getting taken back by nature after he died. He had so many vines that crawled up the walls. He would have loved to see how beautiful it is."
 	if _argv[0] == "Watering Can"; "\0\b2☐☐☐☐☐☐ had a green watering can, and then would wonder why he always couldn’t find it. It blended in with the greenery of his garden. "
 	
-	if _argv[0] == "CD"; "CD Dialogue"
-	if _argv[0] == "Pocket Watch"; "Pocket Watch Dialogue"
-	if _argv[0] == "Diary"; "Diary Dialogue"
-	if _argv[0] == "Key"; "Key Dialogue"
-	if _argv[0] == "Photograph"; "Photograph Dialogue"
+	if _argv[0] == "CD"; "\0\b4☐☐☐☐☐ always had a peculiar taste in music. He only listened to songs that reminded him of someone in his life. It didn't matter what genre it was, how old or new. Some of them were obvious why he picked them, but others... I guess only he would understand. These days, they only remind me of him. "
+	if _argv[0] == "Pocket Watch"; "\0\b4This pocket watch was apparently a gift to ☐☐☐☐☐ from his grandparent. He only ever said good things about them and the time they spent together. It was strange, though. I never saw any pictures of them when I went to ☐☐☐☐☐'s house. There were photos all over the walls of the rest of his family. I never found out why that was. "
+	if _argv[0] == "Diary"; "\0\b4There was an entire box of diaries like this in ☐☐☐☐☐'s attic. He started writing them when he was 12 years old, or so he said. Every single day without fail, aside from the occasional hospital stay outside of his control. I never really believed it until I saw how many there were. This most recent one is only a few pages in... The cover is getting dusty. "
+	if _argv[0] == "Key"; "\0\b4☐☐☐☐☐ and I found this key in the woods, a long time ago. It was stuck in a tree; the bark had started to grow around it. We tried it on every lock we could find, but never found what it went to. After a while, we started calling it 'the key to nowhere'. "
+	if _argv[0] == "Photograph"; "\0\b0A photo of ☐☐☐☐☐ and someone I never met. It's labelled 'New suits'. They seem close... "
 	
 	if _argv[0] == "Clown"; "Clown Dialogue"
 	if _argv[0] == "Spinning Top"; "Spinning Top Dialogue"

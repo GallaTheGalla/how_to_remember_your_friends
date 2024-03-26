@@ -27,4 +27,10 @@ RandomTalk : nonoverlap_pool
 	"\0\b2It used to take 10 minutes to walk down to the lake. These days, it takes me twice as long. I guess I don't feel like I need to rush anymore. "
 	"\0\b0Hm, I should reapply my sunscreen. Those sunrays hurt at any time of the day. "
 	"\0\b0I should’ve brought more snacks. I’m really craving some %(food). "
+	"\0\b2I try not to pay attention to the shadows I see at night. I know my mind likes to play tricks on me. It's hard, though, because I know I could be wrong... "
+	"\0\b0I heard %(ananimal) outside the window last night. I wonder where it went. "
+	"\0\b2Sometimes, I imagine there's a monster in there that I'm trying to catch. I don't think that would end well for me if it was true, though. "
+	"\0\b0There's a lot of boxes left to get through. "
+	"\0\b0I want to lie down on the ground and pretend I'm a worm. I'll hum to try and bring them out to see me. "
+	"\0\b2If I was a book, I'd be %(abook) "
 }
