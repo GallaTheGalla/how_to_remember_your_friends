@@ -20,7 +20,7 @@ RandomTalk : nonoverlap_pool
 	"\0\b0Sometimes I wonder what happened to the people I lost along the way. Where are they now? "
 	"\0\b0So tired... but it's not time to rest yet. "
 	"\0\b0When it's so quiet, you grow to appreciate all the little noises. "
-	"\0\b0I was going to %(asatreat), but I ended up going for a jog instead. It wasn't a bad trade.  "
+	"\0\b2I was going to %(asatreat), but I ended up going for a jog instead. It wasn't a bad trade.  "
 	"\0\b0Might be time to stretch. "
 	"\0\b0Need some %(drink). "
 	"\0\b0Headache... I think I need to %(headache). "
@@ -35,6 +35,14 @@ RandomTalk : nonoverlap_pool
 	"\0\b2If I was a book, I'd be %(abook) "
 	"\0\b0I had a nosebleed earlier... seems like a bad omen... "
 	"\0\b0I should make a to-do list. It might help me keep track of everything better. "
+	"\0\b0Ow, caught my finger on a hook—! "
+	"\0\b0My boots are covered in mud. I'll have to wash them off. "
+	"\0\b0I've seen a lot of %(insects) this year. "
+	"\0\b2Whenever I head home later than usual, I see a lot of eyes among the trees. I wonder what's out there watching me? "
+	"\0\b0I miss giving everyone gifts. That was always my favorite part of holidays. "
+	"\0\b0There's a festival in town soon... but I'm not sure I want to go. It'll be lonely on my own... "
+	"\0\b0It's easy to lose track of time here, but that isn't always a bad thing. "
+	"\0\b0It might be time to donate some of the stuff sitting around... "
 }
 
 todolist

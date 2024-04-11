@@ -59,7 +59,7 @@ OnResetProgress : all
 	EntryFlags = IARRAY
 	"\1\![bind,Complete,,0]"
 	"\1\![bind,Highlight,,0]"
-	"weep worp"
+	"\b0\nProgress has been reset."
 }
 
 OnTalkRateChange

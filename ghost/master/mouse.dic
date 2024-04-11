@@ -32,10 +32,12 @@ OnMouseDoubleClick
 
 OnMouseEnter
 {
-	if !("__ITEM_DIALOGUE__" !_in_ SHIORI3FW.LastTalk && !SHIORI3FW.CanTalk)
+	if CanChangeHighlight
     {
 		if BalloonIsOpen; "\C"
 		--
+        "\1\![bind,Page Turn,,0]\![bind,Highlight,,0]"
+        --
 		if reference4 == "Previous"; "\1\![bind,Page Turn,Previous,1]"
 		if reference4 == "Next"; "\1\![bind,Page Turn,Next,1]"
 		
@@ -65,7 +67,7 @@ OnMouseEnter
 
 OnMouseLeave
 {
-	if !("__ITEM_DIALOGUE__" !_in_ SHIORI3FW.LastTalk && !SHIORI3FW.CanTalk)
+	if CanChangeHighlight
     {
 		if BalloonIsOpen; "\C"
 		--
@@ -94,4 +96,14 @@ OnMouseLeave
 		if reference4 == "Lure"; "\1\![bind,Highlight,Lure,0]"
 		if reference4 == "Tuna"; "\1\![bind,Highlight,Tuna,0]"
 	}
+}
+
+OnMouseLeaveAll
+{
+    if CanChangeHighlight
+    {
+        if BalloonIsOpen; "\C"
+        --
+        "\1\![bind,Page Turn,,0]\![bind,Highlight,,0]"
+    }
 }

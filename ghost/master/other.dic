@@ -24,6 +24,13 @@ BalloonIsOpen
     "balloon" _in_ status
 }
 
+CanChangeHighlight
+{
+    !("__ITEM_DIALOGUE__" !_in_ SHIORI3FW.LastTalk && !SHIORI3FW.CanTalk) /
+    || "\1\![bind,Page Turn" _in_ SHIORI3FW.LastTalk /
+    || "\1\![bind,Highlight" _in_ SHIORI3FW.LastTalk
+}
+
 displayjournal
 {
 	if journalopen; "\1\s[10]"
@@ -73,8 +80,8 @@ OnTranslate
 	if "\![no-autopause]" !_in_ _talk
 	{
 		_talk = REPLACE(_talk,"... ",".\w2.\w2.\w8 ")
-		_talk = REPLACE(_talk,"..? ",".\w4.\w4?\w8 ")
-		_talk = REPLACE(_talk,"..! ",".\w4.\w4!\w8 ")
+		_talk = REPLACE(_talk,"..? ",".\w2.\w2?\w8 ")
+		_talk = REPLACE(_talk,"..! ",".\w2.\w2!\w8 ")
 		_talk = REPLACE(_talk,", ",",\w4 ")
 		_talk = REPLACE(_talk,". ",".\w8 ")
 		_talk = REPLACE(_talk,"? ","?\w8 ")

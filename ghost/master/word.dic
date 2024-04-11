@@ -51,7 +51,7 @@ asatreat
 	"tidy up that side table"
 	"have a nap"
 	"go see the butterfly fields"
-	"moisturise my scalp"
+	"moisturize my scalp"
 	"fold my laundry"
 	"prep meals for the week"
 	"organize my craft supplies"
@@ -109,6 +109,20 @@ headache
 	"relax my face"
 	"grab a %(ANY('hot,cold')) compress"
 	"watch my caffiene"
+}
+
+insects
+{
+	"dragonflies"
+	"beetles"
+	"mayflies"
+	"moths"
+	"butterflies"
+	"springtails"
+	"bees"
+	"water striders"
+	"water scorpions"
+	"craneflies"
 }
 
 juice

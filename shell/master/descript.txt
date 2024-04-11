@@ -48,6 +48,7 @@ kero.bindgroup1019.name,Highlight,Key
 kero.bindgroup1021.name,Highlight,Photograph
 
 kero.bindgroup104.name,Page,Old Toys
+kero.bindgroup105.name,Complete,Old Toys
 kero.bindgroup1022.name,Entry,Clown
 kero.bindgroup1024.name,Entry,Spinning Top
 kero.bindgroup1026.name,Entry,Teddy
