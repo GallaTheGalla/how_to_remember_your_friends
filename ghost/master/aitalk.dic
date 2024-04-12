@@ -34,7 +34,7 @@ RandomTalk : nonoverlap_pool
 	"\0\b0I want to lie down on the ground and pretend I'm a worm. I'll hum to try and bring them out to see me. "
 	"\0\b2If I was a book, I'd be %(abook) "
 	"\0\b0I had a nosebleed earlier... seems like a bad omen... "
-	"\0\b0I should make a to-do list. It might help me keep track of everything better. "
+	"\0\b0I should make a to-do list. It might help me keep track of everything better. \e:chain=todolist"
 	"\0\b0Ow, caught my finger on a hook—! "
 	"\0\b0My boots are covered in mud. I'll have to wash them off. "
 	"\0\b0I've seen a lot of %(insects) this year. "
