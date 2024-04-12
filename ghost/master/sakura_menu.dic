@@ -3,8 +3,8 @@ OnSakuraMenu : all
 	"\0\s[0]\b4\![set,autoscroll,disable]"
 	"\_q"
 	
-	"\![*]\q[Talk to me,OnAiTalk]"
-	if LastTalk != ""; "  \![*]\q[Say that again,OnLastTalk]"
+	"\![*]\q[Dialogue,OnAiTalk]"
+	if LastTalk != ""; "  \![*]\q[Repeat,OnLastTalk]"
 	"\n\n[half]"
 	
 	if journalopen; "\![*]\q[Close Scrapbook,OnJournalOpen]\n\n[half]"
