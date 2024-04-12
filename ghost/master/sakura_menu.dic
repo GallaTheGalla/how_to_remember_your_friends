@@ -12,28 +12,21 @@ OnSakuraMenu : all
 	
 	"\![*]\q[Change Fishing Rate,OnFishRateChangeMenu]\n\n[half]"
 	
-	_talkrate = "Off"
-	if aitalkinterval == 30; _talkrate = "30 seconds"
-	elseif aitalkinterval == 60; _talkrate = "1 minute"
-	elseif aitalkinterval == 180; _talkrate = "3 minutes"
-	elseif aitalkinterval == 300; _talkrate = "5 minutes"
-	elseif aitalkinterval == 600; _talkrate = "10 minutes"
 	"Talkrate:\n"
-
-	if _talkrate == "30 seconds"; "\q[☑30s,OnTalkRateChange,30]"
-	else; "\q[☐30s,OnTalkRateChange,30]"
-	"  "
-	if _talkrate == "1 minute"; "\q[☑1m,OnTalkRateChange,60]"
-	else; "\q[☐1m,OnTalkRateChange,60]"
-	"  "
-	if _talkrate == "3 minutes"; "\q[☑3m,OnTalkRateChange,180]"
-	else; "\q[☐3m,OnTalkRateChange,180]"
-	"  "
-	if _talkrate == "5 minutes"; "\q[☑5m,OnTalkRateChange,300]"
-	else; "\q[☐5m,OnTalkRateChange,300]"
-	"  "
-	if _talkrate == "10 minutes"; "\q[☑10m,OnTalkRateChange,600]"
-	else; "\q[☐10m,OnTalkRateChange,600]"
+    
+    _times = ("30s,30","1m,60","3m,180","5m,300","10m,600")
+    
+    foreach _times; _time
+    {
+        "\q["
+        switch TOINT(_time[1]) == aitalkinterval
+        {
+            "☐"
+            "☑"
+        }
+        "%(_time[0]),OnTalkRateChange,%(_time[1])]  "
+    }
+	"\c[char,2]"
 	
 	"\n\n\![*]\q[Reset,OnResetConfirmation]%(newline)\f[align,right]\![*]\q[Nevermind,blank]"	
 }
@@ -72,7 +65,6 @@ OnTalkRateChange
 	{
 		aitalkinterval = TOINT(reference0)
 	}
-	--
 	OnSakuraMenu
 }
 
@@ -101,8 +93,6 @@ OnFishRateChangeMenu : all
 OnFishRateChange
 {
 	fishrate = reference0
-	--
 	SetFishingTime
-	--
 	OnFishRateChangeMenu
 }

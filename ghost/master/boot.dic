@@ -1,11 +1,8 @@
 OnFirstBoot
 {
 	variable.initialize
-	--
 	EntryFlags = IARRAY
-	--
 	LastTalk = ""
-	--
 	"\![raise,OnBoot]"
 }
 
@@ -21,7 +18,6 @@ OnInitialize
 OnBoot
 {
 	SetFishingTime
-	--
 	displayjournal
 	--
 	"\0\s[0]"
