@@ -9,7 +9,7 @@ craftmanurl,
 seriko.alignmenttodesktop,free
 seriko.use_self_alpha,1
 
-kero.menu,auto
+kero.menu,hidden
 kero.bindoption11.group,Page,mustselect
 kero.bindgroup11.default,11
 kero.bindoption101.group,Complete,multiple
