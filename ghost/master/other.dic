@@ -188,3 +188,32 @@ WearingDressup
 	if ASEARCH(_argv[0],CurrentDressups) != -1; 1
 	else; 0
 }
+
+On_homeurl
+{
+	"https://raw.githubusercontent.com/GallaTheGalla/how_to_remember_your_friends/main/"
+}
+
+FormatLinks : all
+{
+    for _i = 0; _i < ARRAYSIZE(_argv); _i++
+    {
+        _argv[_i]
+        if _i % 2 == 1; "%ASC(2)"
+        else; "%ASC(1)"
+    }
+}
+
+On_sakura.recommendsites
+{
+    FormatLinks(recommendsites_sakura)
+}
+
+recommendsites_sakura : array
+{
+    "Leave a Review";	"https://forms.gle/yr84j797wYCbsSGn8"
+	"StrangelyKai's Github";	"https://github.com/StrangelyKai/Ukagaka"
+	"StrangelyKai's Dev Wiki Page"; "https://ukagakadreamteam.com/wiki/dev/strangelykai"
+	"Galla's Ghosts";	"https://gallathegalla.github.io/gtg-ghosts/"
+    "Ghost Masquerade 6 Afterword";     "https://earlduant.blog.fc2.com/blog-entry-897.html"
+}

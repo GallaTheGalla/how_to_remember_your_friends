@@ -5,9 +5,9 @@ type,ghost
 
 shiori,yaya.dll
 
-craftman,Reel-Inna Boatman & Swampbubble
-craftmanw,Reel-Inna Boatman & Swampbubble
-craftmanurl,
+craftman,StrangelyKai & Galla
+craftmanw,StrangelyKai & Galla
+craftmanurl,https://gallathegalla.github.io/gtg-ghosts/
 
 sakura.name,Fisher
 kero.name,Scrapbook
