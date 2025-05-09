@@ -212,7 +212,7 @@ On_sakura.recommendsites
 recommendsites_sakura : array
 {
     "Leave a Review";	"https://forms.gle/yr84j797wYCbsSGn8"
-	"StrangelyKai's Github";	"https://github.com/StrangelyKai/Ukagaka"
+	"StrangelyKai's Github";	"https://github.com/StrangelyKai"
 	"StrangelyKai's Dev Wiki Page"; "https://ukagakadreamteam.com/wiki/dev/strangelykai"
 	"Galla's Ghosts";	"https://gallathegalla.github.io/gtg-ghosts/"
     "Ghost Masquerade 6 Afterword";     "https://earlduant.blog.fc2.com/blog-entry-897.html"
